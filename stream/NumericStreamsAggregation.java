@@ -8,7 +8,7 @@ public class NumericStreamsAggregation {
 
         int sum = numbers.stream()
         .distinct()
-        .filter(e -> e >5)
+        .filter(e -> e > 5)
         .mapToInt(e -> e * 3).sum();
 
         System.out.println(sum);
